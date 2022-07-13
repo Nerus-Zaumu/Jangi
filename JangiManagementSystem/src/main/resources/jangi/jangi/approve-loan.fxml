@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background-style" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jangi.jangi.AdminController">
+   <children>
+      <Label layoutX="205.0" layoutY="45.0" styleClass="historyLabel" text="Pending Loans">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TableView layoutX="37.0" layoutY="93.0" prefHeight="157.0" prefWidth="526.0">
+        <columns>
+          <TableColumn prefWidth="87.0" text="User ID" />
+          <TableColumn prefWidth="176.0" text="Name" />
+            <TableColumn prefWidth="137.0" text="Suretee" />
+            <TableColumn prefWidth="125.0" text="Loan Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="37.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="31.0" prefWidth="145.0" text="Back To Dashboard" />
+      <Button layoutX="452.0" layoutY="21.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" text="Refresh Loans" />
+      <Label layoutX="58.0" layoutY="283.0" text="User ID">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="193.0" layoutY="282.0" prefHeight="31.0" prefWidth="202.0" promptText="\@user id" />
+      <Button layoutX="240.0" layoutY="346.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="108.0" text="Approve Loan" />
+   </children>
+</AnchorPane>

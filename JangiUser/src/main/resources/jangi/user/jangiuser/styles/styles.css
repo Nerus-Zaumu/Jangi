@@ -1,0 +1,54 @@
+#loginAnchor{
+    -fx-background-color: #87ceeb;
+}
+
+.background-style{
+    -fx-background-color: #87ceeb;
+}
+
+.historyLabel{
+    -fx-text-fill: black;
+}
+
+Label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+TableView{
+    -fx-background-color: #87ceeb;
+    -fx-text-fill: white;
+}
+
+Button{
+    -fx-background-color: white;
+    -fx-text-fill: #35357f;
+    -fx-border-radius: 5px;
+}
+
+Button:hover, Button:focused{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+ComboBox{
+    -fx-background-color: white;
+    -fx-text-fill: #35357f;
+}
+
+.list-items{
+    -fx-text-fill: black;
+}
+
+#addTitle{
+    -fx-text-fill: blue;
+}
+
+#loginBtn{
+    -fx-background-color: white;
+    -fx-text-fill: #35357f;
+    -fx-border-radius: 5px;
+}
+#error_message{
+    -fx-text-fill: #b01e1e;
+}

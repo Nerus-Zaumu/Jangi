@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background-style" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jangi.user.jangiuser.MemberController">
+   <children>
+      <Label layoutX="130.0" layoutY="37.0" text="Load money into account">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="137.0" text="Amount">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="246.0" layoutY="272.0" mnemonicParsing="false" onAction="#addMoney" prefHeight="36.0" prefWidth="108.0" text="Add" />
+      <Label layoutX="78.0" layoutY="201.0" text="Telephone">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="savedAmount" layoutX="226.0" layoutY="132.0" prefHeight="36.0" prefWidth="210.0" promptText="\@amount" />
+      <TextField layoutX="226.0" layoutY="201.0" prefHeight="36.0" prefWidth="210.0" promptText="\@telephone" />
+      <Button fx:id="loadSwitch" layoutX="242.0" layoutY="330.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="36.0" prefWidth="118.0" text="Go back Home" />
+   </children>
+</AnchorPane>

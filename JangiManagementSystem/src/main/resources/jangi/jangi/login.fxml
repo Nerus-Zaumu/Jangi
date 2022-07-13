@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="loginAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="630.0" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jangi.jangi.AdminController">
+   <children>
+      <Label layoutX="42.0" layoutY="33.0" text="Welcome to OzonAbaba Community Meeting">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="84.0" text="Admin Login">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField id="adminName" fx:id="adminName" layoutX="206.0" layoutY="157.0" prefHeight="36.0" prefWidth="189.0" promptText="\@admin_name" />
+      <Button id="loginBtn" layoutX="243.0" layoutY="301.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="115.0" text="Login" />
+      <Label id="error_message" fx:id="error_message" layoutX="223.0" layoutY="356.0" text="Wrong login credentials" />
+      <Label layoutX="93.0" layoutY="160.0" text="Name">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="234.0" text="Password">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <PasswordField id="adminPassword" fx:id="loginPassword" layoutX="206.0" layoutY="231.0" prefHeight="36.0" prefWidth="189.0" promptText="\@admin_password" />
+   </children>
+</AnchorPane>
